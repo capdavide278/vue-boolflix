@@ -1,5 +1,6 @@
 <template>
   <div class="container">
+    <img :src="`http://image.tmdb.org/t/p/w342/${filmdescription.poster_path}`" alt="">
     <h1>{{filmdescription.title}}</h1>
     <h3>Titolo originale: {{filmdescription.original_title}}</h3>
     <h3><lang-flag :iso="filmdescription.original_language"/></h3>
