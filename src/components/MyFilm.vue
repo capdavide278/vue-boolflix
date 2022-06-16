@@ -1,9 +1,14 @@
 <template>
     <div>
-        <section>
-            <input type="text" placeholder="Cerca film..." v-model="ricercaUtente">
-            <button @click="cercaFilm">Cerca</button>
-        </section>
+        <header>
+            <div>
+                <h1>BOOLFLIX</h1>
+            </div>
+            <div>
+                <input type="text" placeholder="Cerca film..." v-model="ricercaUtente">
+                <button @click="cercaFilm">Cerca</button>
+            </div>
+        </header>
       <FilmDescription
         v-for="element in film" :key="element.id" :filmdescription="element"
       />
@@ -72,5 +77,22 @@ export default {
 </script>
 
 <style lang="scss">
+header{
+    background-color: #000000;
+    width: 100%;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    justify-content: space-between;
+    position: fixed;
+    z-index: 100;
+    h1{
+        color: red;
+        margin-right: 79%;
+    }
+
+
+}
 
 </style>
