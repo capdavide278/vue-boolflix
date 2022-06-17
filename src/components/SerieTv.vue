@@ -18,7 +18,7 @@
           <h3>Voto: {{Math.round(seriedescription.vote_average/2)}}</h3>
         </div>
         <div>
-          <font-awesome-icon v-for="i in stelle(seriedescription.vote_average)" :key="i" icon="fa-solid fa-star" />
+          <font-awesome-icon v-for="i in stelle(seriedescription.vote_average)" :key="i + 'n'" icon="fa-solid fa-star" />
           <font-awesome-icon v-for="i in stellevuote(seriedescription.vote_average)" :key="i" icon="fa-regular fa-star" />
         </div>
         <div>
